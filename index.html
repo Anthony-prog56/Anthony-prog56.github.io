@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>My Game Dev Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-papYQZ02Uy1v2Bv5N8hMdKb4gArz2mY88l3TCipx45WZrfRS9z0PfOeL7uSwRBZfdYz4LdObL7Be5OaNVbCUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,6 +16,7 @@
     .hero {
       text-align: center;
       padding: 6rem 2rem 4rem;
+      animation: fadeInUp 1s ease-in-out;
     }
 
     .hero h1 {
@@ -40,10 +42,17 @@
       margin: 0 0.5rem;
     }
 
+    .hero i {
+      margin-right: 8px;
+      color: #00f3ff;
+    }
+
     h2 {
       font-size: 2rem;
       color: #00f3ff;
       margin-left: 2rem;
+      animation: fadeInUp 1s ease-in-out 0.2s;
+      animation-fill-mode: both;
     }
 
     .projects {
@@ -55,7 +64,12 @@
       background: rgba(255, 255, 255, 0.05);
       padding: 1.5rem;
       border-radius: 10px;
+      animation: zoomIn 0.8s ease forwards;
+      opacity: 0;
     }
+
+    .project:nth-child(1) { animation-delay: 0.3s; }
+    .project:nth-child(2) { animation-delay: 0.5s; }
 
     .project h3 {
       font-size: 1.4rem;
@@ -71,20 +85,44 @@
       border-radius: 8px;
       max-width: 100%;
     }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   </style>
 </head>
 <body>
   <section class="hero">
-    <h1>Anthony Vettese</h1>
+    <h1>Lucas Durand</h1>
     <h2>Game Programming Student</h2>
     <p>Welcome to my portfolio</p>
-    <p>Email: lucas.durand@example.com</p>
-    <p>Phone: +33 6 12 34 56 78</p>
-    <p>Address: 123 Rue des Jeux, 75000 Paris, Île-de-France, France</p>
-    <p>
+    <p><i class="fas fa-envelope"></i>Email: lucas.durand@example.com</p>
+    <p><i class="fas fa-phone"></i>Phone: +33 6 12 34 56 78</p>
+    <p><i class="fas fa-map-marker-alt"></i>Address: 123 Rue des Jeux, 75000 Paris, Île-de-France, France</p>
+    <p><i class="fab fa-linkedin"></i>
       <a href="https://www.linkedin.com/in/lucas-durand/" target="_blank">linkedin.com/in/lucas-durand</a>
     </p>
-    <p>Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
+    <p><i class="fas fa-code"></i>Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
+    <p><i class="fas fa-gamepad"></i>Engines: Unity, Unreal Engine</p>
+    <p><i class="fas fa-file-alt"></i><a href="cv_lucas_durand.pdf" target="_blank">Download My Resume (PDF)</a></p>
   </section>
 
   <h2>Projects</h2>
