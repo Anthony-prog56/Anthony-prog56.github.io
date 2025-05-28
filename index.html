@@ -5,11 +5,10 @@
   <title>My Game Dev Portfolio</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
+      background: #111;
       color: #eee;
-      padding: 2rem;
-      line-height: 1.6;
     }
 
     a {
@@ -17,40 +16,99 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
     h1, h2 {
       color: #00f3ff;
     }
 
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #111, #222);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .hero p {
+      margin: 0.2rem 0;
+      font-size: 1rem;
+    }
+
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
     .project {
       margin-bottom: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 1rem;
     }
 
     img {
-      margin-top: 1rem;
-      border-radius: 8px;
       max-width: 100%;
       height: auto;
+      border-radius: 8px;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
-
 <body>
-  <!-- Introduction -->
-  <h1>Hi, I'm Anthony</h1>
-  <p>
-    Game developer focused on programming gameplay systems, AI, and custom mechanics using Unity and Unreal Engine.
-  </p>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>[Your Name]</h1>
+    <h2>Game Developer – Gameplay & Systems</h2>
+    <p>🎓 Student at [Your School]</p>
+    <p>👾 Welcome to my portfolio!</p>
+    
+    <div class="contact-info">
+      <p>📧 Email: your.email@example.com</p>
+      <p>📞 Phone: +33 6 12 34 56 78</p>
+      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>💻 Languages: C++, C#, Blueprint, Python</p>
+    </div>
+  </section>
 
   <!-- Projects Section -->
-  <h2>Projects</h2>
+  <section class="section">
+    <h2>Projects</h2>
 
-  <!-- Project 1 -->
-  <div class="project">
-    <h3>🚀 Space Puzzle</h3>
-    <p><strong>Engin
+    <div class="project">
+      <h3>Space Puzzle</h3>
+      <p>Unity – C#</p>
+      <p>Puzzle-platformer with custom gravity system and level saving.<br>
+      <a href="https://github.com/tonpseudo/space-puzzle" target="_blank">GitHub Repo</a> |
+      <a href="https://yourgame.itch.io/space-puzzle" target="_blank">Playable Demo</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>AI Stealth Prototype (Blueprint)</h3>
+      <p>Unreal Engine – Blueprint</p>
+      <p>Enemy AI with patrol and chase using state machine and ray tracing.<br>
+      <a href="https://youtu.be/yourvideo" target="_blank">Watch Video</a>
+      </p>
+      <img src="blueprint_ai_screenshot.jpg" alt="AI Blueprint Screenshot" width="600">
+    </div>
+  </section>
+
+</body>
+</html>
