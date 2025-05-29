@@ -56,43 +56,43 @@
       font-size: 1.2rem;
     }
 
-    h2 {
-      font-size: 2rem;
-      color: #00f3ff;
-      margin-left: 2rem;
-      animation: fadeInUp 1s ease-in-out 0.2s;
-      animation-fill-mode: both;
-    }
-
-    .projects {
-      padding: 2rem;
-    }
-
-    .project {
-      margin-bottom: 3rem;
+    .project-featured {
+      height: 100vh;
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
+      animation: fadeInUp 1.2s ease-in-out;
+      text-align: center;
+    }
+
+    .project-featured h2 {
+      font-size: 3rem;
+      color: #00f3ff;
+      margin-bottom: 1rem;
+    }
+
+    .project-featured p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .project-featured img {
+      margin-top: 2rem;
       border-radius: 10px;
-      animation: zoomIn 0.8s ease forwards;
-      opacity: 0;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
     }
 
-    .project:nth-child(1) { animation-delay: 0.3s; }
-    .project:nth-child(2) { animation-delay: 0.5s; }
-
-    .project h3 {
-      font-size: 1.4rem;
-      color: #ffffff;
-    }
-
-    .project p {
-      font-size: 1rem;
-    }
-
-    img {
-      margin-top: 1rem;
-      border-radius: 8px;
-      max-width: 100%;
+    .project-featured a {
+      color: #00f3ff;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
 
     @keyframes fadeInUp {
@@ -105,54 +105,36 @@
         transform: translateY(0);
       }
     }
-
-    @keyframes zoomIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
   </style>
 </head>
 <body>
   <section class="hero">
-    <h1>Lucas Durand</h1>
-    <h2>Game Programming Student</h2>
+    <h1><!-- ✏️ Your Name -->Lucas Durand</h1>
+    <h2><!-- ✏️ Your Role -->Game Programming Student</h2>
     <p><i class="fas fa-hand-spock"></i>Welcome to my portfolio</p>
-    <p><i class="fas fa-envelope"></i>lucas.durand@example.com</p>
-    <p><i class="fas fa-phone"></i>+33 6 12 34 56 78</p>
-    <p><i class="fas fa-map-marker-alt"></i>123 Rue des Jeux, 75000 Paris, Île-de-France</p>
-    <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lucas-durand/" target="_blank">linkedin.com/in/lucas-durand</a></p>
-    <p><i class="fas fa-code"></i>Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
+    <p><i class="fas fa-envelope"></i><!-- ✏️ Email -->lucas.durand@example.com</p>
+    <p><i class="fas fa-phone"></i><!-- ✏️ Phone -->+33 6 12 34 56 78</p>
+    <p><i class="fas fa-map-marker-alt"></i><!-- ✏️ Address -->123 Rue des Jeux, 75000 Paris, Île-de-France</p>
+    <p><i class="fab fa-linkedin"></i>
+      <!-- ✏️ LinkedIn -->
+      <a href="https://www.linkedin.com/in/lucas-durand/" target="_blank">linkedin.com/in/lucas-durand</a>
+    </p>
+    <p><i class="fas fa-code"></i><!-- ✏️ Skills -->Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
     <p><i class="fas fa-gamepad"></i>Engines: Unity, Unreal Engine</p>
     <p><i class="fas fa-file-alt"></i><a href="cv_lucas_durand.pdf" target="_blank">Download My Resume (PDF)</a></p>
   </section>
 
-  <h2>Projects</h2>
-  <section class="projects">
-  <div class="project">
-    <h3>🎮 Donkey Kong (1981) Remake</h3> <!-- ✏️ Titre du projet -->
-
-    <p><strong>Moteur :</strong> Unity – C# <!-- ✏️ Confirme le langage si besoin --></p>
-
-    <p>En groupe, nous avons recréé le jeu <strong>Donkey Kong (1981)</strong>. 
-       L’objectif était de reproduire fidèlement les mécaniques et l’apparence du jeu original.</p> <!-- ✏️ Description du projet -->
-
+  <section class="project-featured">
+    <h2>🎮 Donkey Kong (1981) Remake</h2> <!-- ✏️ Project Title -->
+    <p><strong>Engine:</strong> Unity – C++</p> <!-- ✏️ Engine and language -->
+    <p>This project is a faithful remake of the original Donkey Kong arcade game released in 1981. Built as a group project, we aimed to recreate the core mechanics, level design, and visual style of the classic game.</p> <!-- ✏️ Project description -->
     <p>
       🔗 
-      <a href="#" target="_blank">Lien vers la démo</a> <!-- ✏️ Remplacer # par le vrai lien -->
+      <a href="#">Play Demo</a> <!-- ✏️ Replace with demo link -->
       |
-      <a href="#" target="_blank">Lien GitHub</a> <!-- ✏️ Remplacer # par le vrai lien GitHub -->
+      <a href="#">GitHub Repository</a> <!-- ✏️ Replace with repo link -->
     </p>
-
-    <!-- ✏️ Remplacer "donkey_kong_remake.jpg" par le nom de ton image -->
-    <img src="donkey_kong_remake.jpg" alt="Capture d'écran Donkey Kong Remake" width="600">
-  </div>
-</section>
-
+    <img src="donkey_kong_remake.jpg" alt="Donkey Kong Remake Screenshot"> <!-- ✏️ Replace with image file -->
+  </section>
 </body>
 </html>
