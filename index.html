@@ -250,6 +250,62 @@
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
 }
+
+.aracattack-container {
+  min-height: 100vh;
+  padding: 6rem 4rem;
+  background: rgba(255, 255, 255, 0.04);
+  animation: fadeInUp 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  gap: 3rem;
+}
+
+.aracattack-header h2 {
+  font-size: 3rem;
+  color: #00f3ff;
+  margin-bottom: 0.5rem;
+}
+
+.aracattack-header .engine {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aracattack-header .description {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+}
+
+.aracattack-header .links {
+  font-size: 1.3rem;
+}
+
+.aracattack-header .links a {
+  color: #00f3ff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.aracattack-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.aracattack-images img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
   </style>
 </head>
 <body>
@@ -314,25 +370,24 @@
   </div>
 </section>
   
-  <section class="project-featured">
-  <h2>🕷️ Arac Attack</h2> <!-- ✏️ Project Title -->
-  <p><strong>Engine:</strong> Unity – C++</p> <!-- ✏️ Engine and language -->
-  <p>
-    This project is based on a 2D platformer template where the player controls a soldier fighting spiders to reach the end of the level.
-    The base version allowed movement, shooting in all directions, and enemies that moved between waypoints and caused contact damage.
-    I added a new flying enemy with improved AI using a behavior tree, implemented a grappling hook for the player, added moving platforms,
-    and developed most of the HUD (except the health bar).
-  </p>
-  <p>
-    🔗 
-    <a href="#">Watch Demo</a> <!-- ✏️ Replace with actual video link -->
-    |
-    <a href="#">GitHub Repository</a> <!-- ✏️ Replace with actual GitHub link -->
-  </p>
-  <!-- ✏️ Replace "before_modifications.jpg" and "after_modifications.jpg" with your actual image filenames -->
-  <img src="before_modifications.jpg" alt="Arac Attack Before Modifications">
-  <img src="after_modifications.jpg" alt="Arac Attack After Modifications">
-</section>
+  <section class="aracattack-container">
+    <div class="aracattack-header">
+      <h2>Arac Attack</h2>
+      <div class="engine">Unity3D / C# / Pixel Art</div>
+      <div class="description">
+        Arac Attack is an action platformer game featuring fast-paced combat and dynamic enemy AI.
+        Players navigate through challenging levels filled with arachnid enemies and obstacles.
+      </div>
+      <div class="links">
+        <a href="https://github.com/YourUsername/AracAttack" target="_blank">GitHub Repo</a> | 
+        <a href="https://aracattack.example.com" target="_blank">Official Website</a>
+      </div>
+    </div>
+    <div class="aracattack-images">
+      <img src="https://cdn.discordapp.com/attachments/1143040190820282429/1144699269885217414/aracattack_1.png" alt="Arac Attack Screenshot 1" />
+      <img src="https://cdn.discordapp.com/attachments/1143040190820282429/1144699270222674256/aracattack_2.png" alt="Arac Attack Screenshot 2" />
+    </div>
+  </section>
 
   <section class="project-featured">
   <h2>♟️ Your Turn</h2> <!-- ✏️ Project Title -->
