@@ -194,6 +194,62 @@
   text-decoration: none;
   margin: 0 1rem;
 }
+
+    .project-elementalist {
+  min-height: 100vh;
+  padding: 6rem 4rem;
+  background: rgba(255, 255, 255, 0.04);
+  animation: fadeInUp 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  gap: 3rem;
+}
+
+.elementalist-header h2 {
+  font-size: 3rem;
+  color: #00f3ff;
+  margin-bottom: 0.5rem;
+}
+
+.elementalist-header .engine {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.elementalist-header .description {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+}
+
+.elementalist-header .links {
+  font-size: 1.3rem;
+}
+
+.elementalist-header .links a {
+  color: #00f3ff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.elementalist-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.elementalist-images img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
   </style>
 </head>
 <body>
@@ -238,20 +294,25 @@
   </div>
 </section>
 
-  <section class="project-featured">
-    <h2>🧙 Elementalist</h2> <!-- ✏️ Project Title -->
-    <p><strong>Engine:</strong> Unreal Engine – Blueprint</p>
-    <p>This project was built in a group starting from a provided template. Players explore a dungeon, fight golems, and find keys to access the elemental altar. I learned the basics of Unreal's Blueprint system and debugged several gameplay-blocking programming issues.</p>
-    <p>
-      🔗 
-      <a href="#">Play Demo</a> <!-- ✏️ Replace with demo link -->
-      |
-      <a href="#">GitHub Repository</a> <!-- ✏️ Replace with repo link -->
+ <section class="project-elementalist">
+  <div class="elementalist-header">
+    <h2>🧙 Elementalist</h2>
+    <p class="engine"><strong>Engine:</strong> Unreal Engine – Blueprint</p>
+    <p class="description">
+      This project was built in a group starting from a provided template. Players explore a dungeon, fight golems,
+      and find keys to access the elemental altar. I learned the basics of Unreal's Blueprint system and debugged
+      several gameplay-blocking programming issues.
     </p>
-    <!-- ✏️ Replace image filenames -->
+    <div class="links">
+      🔗 <a href="#">Play Demo</a> | <a href="#">GitHub Repository</a>
+    </div>
+  </div>
+
+  <div class="elementalist-images">
     <img src="elementalist_splash.jpg" alt="Elementalist Splash Art">
     <img src="elementalist_gameplay.jpg" alt="Elementalist Gameplay Screenshot">
-  </section>
+  </div>
+</section>
   
   <section class="project-featured">
   <h2>🕷️ Arac Attack</h2> <!-- ✏️ Project Title -->
