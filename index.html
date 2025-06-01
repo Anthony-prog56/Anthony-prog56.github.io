@@ -16,30 +16,48 @@
     .hero {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 100vh;
       text-align: center;
       padding: 2rem;
       animation: fadeInUp 1s ease-in-out;
+      position: relative;
     }
 
-    .hero h1 {
-      font-size: 4rem;
+    .hero-header {
+      position: absolute;
+      top: 10%;
+      text-align: center;
+    }
+
+    .hero-header h1 {
+      font-size: 5rem;
       color: #00f3ff;
-      margin-bottom: 1rem;
+      margin: 0;
     }
 
-    .hero h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-top: 0;
-      margin-bottom: 1rem;
+    .hero-header h2 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .hero-header .welcome {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .hero-body {
+      margin-top: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .hero p {
       font-size: 1.3rem;
-      margin: 0.4rem 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -109,19 +127,22 @@
 </head>
 <body>
   <section class="hero">
-    <h1><!-- ✏️ Your Name -->Lucas Durand</h1>
-    <h2><!-- ✏️ Your Role -->Game Programming Student</h2>
-    <p><i class="fas fa-hand-spock"></i>Welcome to my portfolio</p>
-    <p><i class="fas fa-envelope"></i><!-- ✏️ Email -->lucas.durand@example.com</p>
-    <p><i class="fas fa-phone"></i><!-- ✏️ Phone -->+33 6 12 34 56 78</p>
-    <p><i class="fas fa-map-marker-alt"></i><!-- ✏️ Address -->123 Rue des Jeux, 75000 Paris, Île-de-France</p>
-    <p><i class="fab fa-linkedin"></i>
-      <!-- ✏️ LinkedIn -->
-      <a href="https://www.linkedin.com/in/lucas-durand/" target="_blank">linkedin.com/in/lucas-durand</a>
-    </p>
-    <p><i class="fas fa-code"></i><!-- ✏️ Skills -->Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
-    <p><i class="fas fa-gamepad"></i>Engines: Unity, Unreal Engine</p>
-    <p><i class="fas fa-file-alt"></i><a href="cv_lucas_durand.pdf" target="_blank">Download My Resume (PDF)</a></p>
+    <div class="hero-header">
+      <h1>Lucas Durand</h1>
+      <h2>Game Programming Student</h2>
+      <p class="welcome"><i class="fas fa-hand-spock"></i>Welcome to my portfolio</p>
+    </div>
+    <div class="hero-body">
+      <p><i class="fas fa-envelope"></i>lucas.durand@example.com</p>
+      <p><i class="fas fa-phone"></i>+33 6 12 34 56 78</p>
+      <p><i class="fas fa-map-marker-alt"></i>123 Rue des Jeux, 75000 Paris, Île-de-France</p>
+      <p><i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/lucas-durand/" target="_blank">linkedin.com/in/lucas-durand</a>
+      </p>
+      <p><i class="fas fa-code"></i>Languages: C#, C++, Python, Blueprint (Unreal Engine)</p>
+      <p><i class="fas fa-gamepad"></i>Engines: Unity, Unreal Engine</p>
+      <p><i class="fas fa-file-alt"></i><a href="cv_lucas_durand.pdf" target="_blank">Download My Resume (PDF)</a></p>
+    </div>
   </section>
 
   <section class="project-featured">
