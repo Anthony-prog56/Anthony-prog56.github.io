@@ -360,6 +360,34 @@
 .nav-buttons button:hover {
   background-color: #444;
 }
+
+    .floating-menu {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.floating-menu button {
+  background-color: #111;
+  border: none;
+  color: #00f3ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.floating-menu button:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
   </style>
 </head>
 <body>
@@ -557,7 +585,7 @@
   </div>
 </section>
 
-  <section id="final" class="final-section">
+  <section id="contact" class="final-section">
   <h1 class="thanks">Thank you for visiting my portfolio!</h1>
 
   <div class="contact-info">
@@ -583,5 +611,22 @@
   }
 </script>
 
+  <script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
 </body>
+
+  <div class="floating-menu">
+  <button onclick="scrollToSection('home')">Accueil</button>
+  <button onclick="scrollToSection('projects')">Projets</button>
+  <button onclick="scrollToSection('prototypes')">Prototypes</button>
+  <button onclick="scrollToSection('contact')">Contact</button>
+</div>
+
 </html>
