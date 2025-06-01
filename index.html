@@ -363,7 +363,7 @@
   </style>
 </head>
 <body>
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-header">
       <h1>Lucas Durand</h1>
       <h2>Game Programming Student</h2>
@@ -382,7 +382,7 @@
     </div>
   </section>
 
-<section class="projects-intro">
+<section class="projects-intro" id="projects">
   <h2>Projects</h2>
 </section>
 
@@ -501,7 +501,7 @@
   </div>
 </section>
 
-  <section class="projects-intro">
+  <section class="projects-intro" id="prototypes">
   <h2>Prototypes</h2>
 </section>
 
@@ -568,13 +568,20 @@
   </div>
 
   <div class="nav-buttons">
-    <a href="#projects"><button>Projects</button></a>
-    <a href="#unnamed"><button>Unnamed</button></a>
-    <a href="#prototypes"><button>Prototypes</button></a>
-    <a href="#game-mechanics"><button>Game Mechanics</button></a>
-    <a href="#final"><button>Top</button></a>
+  <button onclick="scrollToSection('home')">Accueil</button>
+  <button onclick="scrollToSection('projects')">Projects</button>
+  <button onclick="scrollToSection('prototypes')">Prototypes</button>
   </div>
 </section>
+
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
 
 </body>
 </html>
