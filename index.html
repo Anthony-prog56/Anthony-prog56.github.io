@@ -139,6 +139,61 @@
   text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
   margin: 0;
 }
+    .project-donkeykong {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6rem 4rem;
+  min-height: 100vh;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.04);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.project-left {
+  flex: 1;
+}
+
+.project-left h2 {
+  font-size: 3rem;
+  color: #00f3ff;
+  margin-bottom: 0.5rem;
+}
+
+.project-left .engine {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-left .description {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.project-right {
+  flex: 1;
+  text-align: center;
+}
+
+.project-right img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.project-right .links {
+  font-size: 1.3rem;
+}
+
+.project-right .links a {
+  color: #00f3ff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
   </style>
 </head>
 <body>
@@ -165,18 +220,23 @@
   <h2>Projects</h2>
 </section>
 
-  <section class="project-featured">
-    <h2>🎮 Donkey Kong (1981) Remake</h2> <!-- ✏️ Project Title -->
-    <p><strong>Engine:</strong> Unity – C++</p> <!-- ✏️ Engine and language -->
-    <p>This project is a faithful remake of the original Donkey Kong arcade game released in 1981. Built as a group project, we aimed to recreate the core mechanics, level design, and visual style of the classic game.</p>
-    <p>
-      🔗 
-      <a href="#">Play Demo</a> <!-- ✏️ Replace with demo link -->
-      |
-      <a href="#">GitHub Repository</a> <!-- ✏️ Replace with repo link -->
+  <section class="project-donkeykong">
+  <div class="project-left">
+    <h2>🎮 Donkey Kong (1981) Remake</h2>
+    <p class="engine"><strong>Engine:</strong> Unity – C++</p>
+    <p class="description">
+      This project is a faithful remake of the original Donkey Kong arcade game released in 1981. Built as a group project,
+      we aimed to recreate the core mechanics, level design, and visual style of the classic game.
     </p>
-    <img src="donkey_kong_remake.jpg" alt="Donkey Kong Remake Screenshot"> <!-- ✏️ Replace with image file -->
-  </section>
+  </div>
+
+  <div class="project-right">
+    <img src="donkey_kong_remake.jpg" alt="Donkey Kong Remake Screenshot">
+    <div class="links">
+      🔗 <a href="#">Play Demo</a> | <a href="#">GitHub Repository</a>
+    </div>
+  </div>
+</section>
 
   <section class="project-featured">
     <h2>🧙 Elementalist</h2> <!-- ✏️ Project Title -->
