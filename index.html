@@ -306,6 +306,60 @@
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
 }
+
+    .final-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.thanks {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.contact-info a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #444;
+}
   </style>
 </head>
 <body>
@@ -500,6 +554,25 @@
       <img src="combat_system_2.jpg" alt="Combat System Screenshot 2" style="width: 100%; border-radius: 10px; margin-top: 1rem;">
     </div>
 
+  </div>
+</section>
+
+  <section id="final" class="final-section">
+  <h1 class="thanks">Thank you for visiting my portfolio!</h1>
+
+  <div class="contact-info">
+    <p><strong>Name:</strong> [Ton Nom]</p>
+    <p><strong>Email:</strong> [ton.email@example.com]</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tonprofil" target="_blank">tonprofil</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/tonprofil" target="_blank">tonprofil</a></p>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="#projects"><button>Projects</button></a>
+    <a href="#unnamed"><button>Unnamed</button></a>
+    <a href="#prototypes"><button>Prototypes</button></a>
+    <a href="#game-mechanics"><button>Game Mechanics</button></a>
+    <a href="#final"><button>Top</button></a>
   </div>
 </section>
 
